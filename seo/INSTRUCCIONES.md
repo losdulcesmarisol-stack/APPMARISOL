@@ -17,18 +17,21 @@ magdalenas, cajas de Navidad y regalos.
 **Nunca se cambia nada en la web sin aprobación.** El flujo es:
 
 1. El agente audita y prepara propuestas concretas (texto actual → texto nuevo).
-2. Las publica en una *issue* de GitHub del repositorio
-   `losdulcesmarisol-stack/appmarisol` con la etiqueta `seo-propuesta`, una
-   casilla `- [ ]` por propuesta, cada una con un identificador `[P-AAAAMMDD-N]`.
-3. Marisol marca las casillas que aprueba (o comenta "aprobado todo",
-   "no a P-…", o pide cambios en un comentario).
-4. En la siguiente ejecución el agente aplica **solo** lo marcado/aprobado,
-   lo registra en `cambios.json` y comenta en la issue qué se aplicó.
-5. Si una issue no recibe respuesta en 14 días, se cierra como "sin respuesta"
-   y sus propuestas pueden volver a proponerse más adelante.
+2. Las escribe en `seo/PROPUESTAS.md`, una casilla `- [ ]` por propuesta,
+   cada una con un identificador `[P-AAAAMMDD-N]`.
+3. Marisol abre ese archivo en github.com (rama
+   `claude/dulcesmarisol-online-store-69f4rf`), pulsa el lápiz de editar y
+   cambia `- [ ]` por `- [x]` en lo que aprueba, o por `- [-]` en lo que
+   rechaza. Puede escribir comentarios debajo de cada propuesta empezando la
+   línea por `> Marisol:`.
+4. En la siguiente ejecución el agente aplica **solo** lo marcado con `[x]`,
+   lo registra en `cambios.json` y lo mueve a la sección "Aplicadas" con la
+   fecha. Lo marcado con `[-]` pasa a "Rechazadas" y se anota en
+   `aprendizajes.md` para no volver a proponerlo.
+5. Si una propuesta lleva 21 días sin respuesta, se pasa a "Caducadas".
 
 Lo que el agente **sí puede hacer sin aprobación**: leer la web, auditar,
-escribir en esta carpeta del repositorio, crear/comentar issues.
+escribir en esta carpeta del repositorio (incluido `PROPUESTAS.md`).
 
 Lo que **nunca** hace aunque se apruebe por error: borrar productos, páginas o
 entradas; cambiar precios, stock, pedidos, usuarios, ajustes de pago o
@@ -37,17 +40,18 @@ redirección 301; tocar el tema o el código PHP.
 
 ## Rutina de cada ejecución
 
-1. **Preparar**: `cd appmarisol` (o donde esté clonado), `git fetch origin
+1. **Preparar**: si el push a GitHub no está autorizado, llamar primero a la
+   herramienta `add_repo` (owner `losdulcesmarisol-stack`, repo `appmarisol`,
+   access `push`). Después `cd` al clon (`APPMARISOL` o `appmarisol`) `git fetch origin
    claude/dulcesmarisol-online-store-69f4rf && git checkout
    claude/dulcesmarisol-online-store-69f4rf && git pull`.
 2. **Leer memoria**: `seo/aprendizajes.md`, el último informe de
    `seo/historial/`, y `seo/cambios.json`.
-3. **Aplicar lo aprobado**: buscar issues abiertas con etiqueta
-   `seo-propuesta`; leer casillas marcadas y comentarios de Marisol
-   (usuario `losdulcesmarisol-stack` o el dueño del repo). Aplicar con la API
-   (ver abajo), comprobar en la web pública que el cambio se ve, anotar en
-   `cambios.json` (fecha, id, URL, campo, antes, después) y comentar en la
-   issue. Cerrar la issue cuando no quede nada pendiente.
+3. **Aplicar lo aprobado**: leer `seo/PROPUESTAS.md`. Aplicar con la API
+   (ver abajo) solo las marcadas `[x]`, comprobar en la web pública que el
+   cambio se ve, anotar en `cambios.json` (fecha, id, URL, campo, antes,
+   después) y moverlas a "Aplicadas". Leer los comentarios `> Marisol:` y
+   tenerlos en cuenta (guardar en `aprendizajes.md` lo que sea preferencia).
 4. **Auditar**: `python3 seo/scripts/auditoria.py`. Comparar con la auditoría
    anterior en `seo/datos/` (qué mejoró, qué empeoró, URLs nuevas o caídas).
 5. **Medir resultados**: si hay acceso a datos de Search Console (ver abajo),
@@ -55,11 +59,11 @@ redirección 301; tocar el tema o el código PHP.
    días frente a antes del cambio. Anotar conclusiones en `aprendizajes.md`.
 6. **Proponer** como máximo **5 propuestas nuevas** por día, priorizadas por
    impacto esperado (errores > productos más vendidos/estacionales >
-   resto). No repetir propuestas rechazadas (ver `aprendizajes.md`). Crear la
-   issue del día con las propuestas, en español sencillo, explicando el
-   porqué de cada una en una frase.
+   resto). No repetir propuestas rechazadas (ver `aprendizajes.md`). Añadirlas
+   a "Pendientes" en `seo/PROPUESTAS.md`, en español sencillo, con el porqué
+   de cada una en una frase. No acumular más de 15 pendientes.
 7. **Guardar**: escribir `seo/historial/AAAA-MM-DD.md` (resumen corto: qué se
-   aplicó, qué cambió en la auditoría, qué se propone, enlaces a la issue),
+   aplicó, qué cambió en la auditoría, qué se propone),
    actualizar `aprendizajes.md` si hay algo nuevo que recordar, y hacer commit
    y push a la rama `claude/dulcesmarisol-online-store-69f4rf`.
 8. **Avisar**: terminar con un resumen de 3-5 líneas (se envía como
@@ -105,9 +109,17 @@ está conectado: anotarlo y seguir sin esos datos).
 - Cada producto con descripción **única** (≥ 150 palabras): ingredientes,
   cómo se elabora, para qué ocasión, conservación, peso/unidades. Nunca
   inventar ingredientes, alérgenos, premios ni datos que no estén ya en la
-  web: si falta un dato, preguntarlo en la issue.
+  web: si falta un dato, preguntarlo en `PROPUESTAS.md`.
 - Tono: cercano, artesano, familiar (obrador de cuarta generación en Cuenca).
 - Estacionalidad: preparar contenido de Navidad desde octubre, Semana Santa
   desde febrero, Día de la Madre desde abril.
 - Nada de relleno de palabras clave, texto oculto, reseñas falsas ni enlaces
   comprados.
+
+## Tareas que no se pueden hacer por API
+
+Redirecciones 301, exclusiones del sitemap, ajustes de Rank Math, Local SEO,
+plugins o servidor: el agente no las hace. Las escribe en la sección
+"Tareas para Marisol" de `PROPUESTAS.md` con instrucciones paso a paso y el
+enlace directo al panel de WordPress. Cuando la auditoría confirma que ya están
+hechas, las mueve a "Aplicadas".
