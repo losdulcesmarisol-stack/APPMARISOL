@@ -6,6 +6,8 @@ criterios generales.
 
 ## Preferencias de Marisol
 - (vacío: se irá llenando con lo que apruebe, rechace o comente)
+- 2026-11-10: aún sin respuestas a las propuestas. No acumular demasiadas: si pasan
+  días sin respuesta, proponer menos y recordar las pendientes en el resumen.
 
 ## Qué ha funcionado / qué no
 - (vacío: se rellena midiendo con Search Console 2-4 semanas después de cada cambio)
@@ -13,5 +15,8 @@ criterios generales.
 ## Datos de la web
 - 2026-11-09: WordPress + WooCommerce + Rank Math, Wordfence, WP Super Cache,
   Jetpack. ~47 productos publicados. Sitemap: /sitemap_index.xml.
+- 2026-11-10: la barra superior de la web anuncia «Envío GRATIS en península desde 60 €»
+  y «pedidos antes de las 13:00 (lun–vie) salen hoy». Usar esos datos en las descripciones.
+- Temporada: en noviembre y diciembre, priorizar las páginas de Navidad y regalos.
 - 2026-11-09: las imágenes decorativas (bordes .webp) llevan alt="" a
   propósito; no son un error.

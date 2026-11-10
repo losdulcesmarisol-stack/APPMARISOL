@@ -13,6 +13,27 @@ debajo una línea que empiece por `> Marisol:`. Después pulsa **"Commit changes
     dulces manchegos artesanos en Cuenca. Descubre nuestros rolletes, mantecados y más.»
   - *(Se aplicará cuando funcione el acceso a la API de WordPress.)*
 
+- [ ] **[P-20261110-1] Página de regalos de Navidad (prioridad: es la temporada).**
+  https://dulcesmarisol.es/regalos-navidad/ · Ahora el título (70 caracteres) y la
+  descripción (166) son tan largos que Google los corta.
+  - Título nuevo: «Regalos de Navidad artesanos de Cuenca | Dulces Marisol»
+  - Descripción nueva: «Regala dulces manchegos artesanos esta Navidad: surtidos, mantecados,
+    rolletes y pastas hechos a mano en Cuenca. Envío 24/48 h, gratis desde 60 €.»
+- [ ] **[P-20261110-2] Página «Conócenos».** https://dulcesmarisol.es/conocenos/
+  Ahora la descripción solo dice «Obrador de repostería MariSol» y el título es muy corto.
+  - Título nuevo: «Nuestro obrador familiar en Cuenca | Dulces Marisol»
+  - Descripción nueva: «Conoce Dulces Marisol, obrador familiar de cuarta generación en Cuenca
+    que elabora a mano rolletes, mantecados, pastas y magdalenas manchegas.»
+- [ ] **[P-20261110-3] Página «Dulces online».** https://dulcesmarisol.es/dulces-online/
+  Ahora la descripción es muy corta («Dulces y repostería tradicional de Cuenca»).
+  - Descripción nueva: «Compra dulces artesanos de Cuenca online: rolletes, mantecados, pastas,
+    magdalenas y surtidos hechos a mano. Envío gratis en península desde 60 €.»
+  - Además tiene poco texto (180 palabras). Si te parece bien, propondré un texto de unas
+    250 palabras más en otra propuesta.
+- [ ] **[P-20261110-4] Título del blog.** https://dulcesmarisol.es/blog-dulces-marisol/
+  Ahora tiene 65 caracteres y Google lo corta.
+  - Título nuevo: «Blog de dulces manchegos y recetas | Dulces Marisol»
+
 ## Tareas para Marisol (se hacen a mano en el panel; aquí solo se marca cuando estén)
 
 - [ ] **[T-20261109-1] Arreglar el acceso del sistema a WordPress.** Tu servidor
@@ -38,6 +59,11 @@ debajo una línea que empiece por `> Marisol:`. Después pulsa **"Commit changes
   **Rank Math → Títulos y Meta → Local SEO**: tipo de negocio
   **"Bakery" (Panadería/Pastelería)**, dirección del obrador, teléfono y horario.
   Así Google entiende que eres un negocio de Cuenca y no un blog.
+
+- [ ] **[T-20261110-1] Poner una imagen por defecto para cuando se comparte la web.**
+  14 páginas (aviso legal, envíos, blog, etc.) no tienen imagen al compartirlas en WhatsApp o
+  Facebook. Ve a **Rank Math → Títulos y Meta → Global → Imagen OpenGraph por defecto** y
+  elige una foto bonita de vuestros dulces (mejor de 1200 × 630 píxeles).
 
 ## Aplicadas
 
