@@ -34,6 +34,14 @@ debajo una línea que empiece por `> Marisol:`. Después pulsa **"Commit changes
   Ahora tiene 65 caracteres y Google lo corta.
   - Título nuevo: «Blog de dulces manchegos y recetas | Dulces Marisol»
 
+- [ ] **[P-20261111-1] Enlazar la entrada nueva de regalos para empresas.** La entrada
+  https://dulcesmarisol.es/regalos-navidad-empresas-dulces-artesanos/ está muy bien, pero
+  ninguna página importante enlaza a ella, y así a Google le cuesta encontrarla y darle valor.
+  - Añadir al final de la página https://dulcesmarisol.es/regalos-navidad/ esta frase con enlace:
+    «¿Buscas regalos para tus clientes o tu equipo? Mira nuestras
+    [ideas de regalos de Navidad para empresas](https://dulcesmarisol.es/regalos-navidad-empresas-dulces-artesanos/).»
+  - Si prefieres hacerlo tú a mano en WordPress, márcalo igual con [x] cuando esté.
+
 ## Tareas para Marisol (se hacen a mano en el panel; aquí solo se marca cuando estén)
 
 - [ ] **[T-20261109-1] Arreglar el acceso del sistema a WordPress.** Tu servidor
