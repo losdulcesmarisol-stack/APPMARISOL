@@ -17,6 +17,8 @@ criterios generales.
   Jetpack. ~47 productos publicados. Sitemap: /sitemap_index.xml.
 - 2026-11-10: la barra superior de la web anuncia «Envío GRATIS en península desde 60 €»
   y «pedidos antes de las 13:00 (lun–vie) salen hoy». Usar esos datos en las descripciones.
+- 2026-11-12: tres días sin respuesta a las propuestas. Cuando no hay cambios ni respuesta,
+  no añadir propuestas nuevas: el resumen recuerda solo las 2 más urgentes.
 - 2026-11-11: Marisol publica contenido nuevo por su cuenta (entrada de regalos de Navidad
   para empresas, bien optimizada). Revisar cada día las URLs nuevas y proponer enlaces internos.
 - Temporada: en noviembre y diciembre, priorizar las páginas de Navidad y regalos.
