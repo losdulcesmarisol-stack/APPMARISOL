@@ -42,6 +42,22 @@ debajo una línea que empiece por `> Marisol:`. Después pulsa **"Commit changes
     [ideas de regalos de Navidad para empresas](https://dulcesmarisol.es/regalos-navidad-empresas-dulces-artesanos/).»
   - Si prefieres hacerlo tú a mano en WordPress, márcalo igual con [x] cuando esté.
 
+- [ ] **[P-20261114-1] Acortar el título de dos entradas nuevas.** Las entradas de esta
+  semana están muy bien (mucho texto útil, bien enlazadas desde el blog). Solo dos títulos
+  pasan un poco de 60 caracteres y Google los corta:
+  - https://dulcesmarisol.es/cesta-navidad-dulces-tipicos-cuenca/ (62) →
+    «Cesta de Navidad con dulces de Cuenca | Dulces Marisol»
+  - https://dulcesmarisol.es/sequillos-tortas-canamon/ (67) →
+    «Sequillos: tortas de cañamón de Cuenca | Dulces Marisol»
+- [ ] **[P-20261114-2] Dos páginas compiten por «sequillos».** La entrada antigua
+  https://dulcesmarisol.es/sequillos-tortas-artesanas/ (de 2018) y la nueva
+  https://dulcesmarisol.es/sequillos-tortas-canamon/ hablan de lo mismo, y Google no sabe
+  cuál enseñar. Propuesta, de menos a más:
+  - (a) Añadir al principio de la antigua: «Hemos preparado una guía más completa:
+    [qué son los sequillos y cómo se toman](https://dulcesmarisol.es/sequillos-tortas-canamon/).»
+  - (b) O redirigir la antigua a la nueva (Rank Math → Redirecciones, 301). Es lo mejor
+    para Google, pero la antigua deja de verse. Escribe debajo `> Marisol: a` o `> Marisol: b`.
+
 ## Tareas para Marisol (se hacen a mano en el panel; aquí solo se marca cuando estén)
 
 - [ ] **[T-20261109-1] Arreglar el acceso del sistema a WordPress.** Tu servidor
