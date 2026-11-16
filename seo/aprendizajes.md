@@ -17,6 +17,8 @@ criterios generales.
   Jetpack. ~47 productos publicados. Sitemap: /sitemap_index.xml.
 - 2026-11-10: la barra superior de la web anuncia «Envío GRATIS en península desde 60 €»
   y «pedidos antes de las 13:00 (lun–vie) salen hoy». Usar esos datos en las descripciones.
+- 2026-11-16: una semana entera sin respuesta a PROPUESTAS.md. Marisol sí publica en la web.
+  Probablemente no entra en GitHub: ofrecer otra forma de aprobar más cómoda.
 - 2026-11-14: Marisol ha publicado 3 entradas más (cesta de Navidad, conservar dulces,
   sequillos), largas y bien hechas, enlazadas desde el blog. Sus títulos tienden a pasarse
   un poco de 60 caracteres. Vigilar que lo nuevo no compita con páginas antiguas del
