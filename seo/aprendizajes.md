@@ -13,6 +13,9 @@ criterios generales.
 - (vacío: se rellena midiendo con Search Console 2-4 semanas después de cada cambio)
 
 ## Datos de la web
+- 2026-11-17: el hosting tiene un cortafuegos anti-robots (servidor «openresty», pantalla
+  «One moment, please...»). Se activa si se piden páginas muy seguidas: auditar despacio
+  (2 a la vez) y no confundir esa pantalla con una página sin título.
 - 2026-11-09: WordPress + WooCommerce + Rank Math, Wordfence, WP Super Cache,
   Jetpack. ~47 productos publicados. Sitemap: /sitemap_index.xml.
 - 2026-11-10: la barra superior de la web anuncia «Envío GRATIS en península desde 60 €»

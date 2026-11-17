@@ -72,6 +72,11 @@ def analizar(url):
         return d
     s = r.text
     d["estado"] = r.status_code
+    if re.search(r"<title>\s*One moment, please", s, re.I):
+        # Pantalla anti-robots del cortafuegos del hosting: no es la página real
+        d["bloqueo_antibots"] = True
+        d["servidor"] = r.headers.get("server", "")
+        return d
     d["tiempo_s"] = r.elapsed_s
     d["bytes"] = len(r.content)
     d["titulo"] = uno(r"<title[^>]*>(.*?)</title>", s)
@@ -99,6 +104,8 @@ def problemas_pagina(d):
     p = []
     if "error" in d:
         return [f"error de red: {d['error']}"]
+    if d.get("bloqueo_antibots"):
+        return [f"BLOQUEO ANTI-ROBOTS del hosting (servidor {d.get('servidor')}); la página real no se ha podido revisar"]
     if d["estado"] != 200:
         p.append(f"estado HTTP {d['estado']}")
     t = d["titulo"] or ""
@@ -162,7 +169,7 @@ def main():
     a = ap.parse_args()
 
     urls = urls_sitemap()
-    with ThreadPoolExecutor(max_workers=4) as ex:
+    with ThreadPoolExecutor(max_workers=2) as ex:  # despacio, para no activar el cortafuegos del hosting
         paginas = list(ex.map(analizar, urls))
     for d in paginas:
         d["problemas"] = problemas_pagina(d)

@@ -89,6 +89,14 @@ debajo una línea que empiece por `> Marisol:`. Después pulsa **"Commit changes
   Facebook. Ve a **Rank Math → Títulos y Meta → Global → Imagen OpenGraph por defecto** y
   elige una foto bonita de vuestros dulces (mejor de 1200 × 630 píxeles).
 
+- [ ] **[T-20261117-1] Comprobar que Google ve bien la tienda (2 minutos).** El 17 de
+  noviembre, el cortafuegos de vuestro hosting me enseñó en /tienda/ una pantalla de
+  «One moment, please...» en lugar de la tienda. Pasa con robots que visitan muchas páginas
+  seguidas, y Google es uno. En **Search Console → Inspección de URLs** pega
+  `https://dulcesmarisol.es/tienda/` y pulsa **«Probar URL publicada»**. Si la captura sale
+  con la tienda, todo bien. Si sale «One moment, please...», hay que pedir al hosting que
+  no bloquee a Googlebot.
+
 ## Aplicadas
 
 ## Rechazadas
