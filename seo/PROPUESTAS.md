@@ -58,6 +58,11 @@ debajo una línea que empiece por `> Marisol:`. Después pulsa **"Commit changes
   - (b) O redirigir la antigua a la nueva (Rank Math → Redirecciones, 301). Es lo mejor
     para Google, pero la antigua deja de verse. Escribe debajo `> Marisol: a` o `> Marisol: b`.
 
+- [ ] **[P-20261118-1] Acortar el título de la entrada de galletas.**
+  https://dulcesmarisol.es/galletas-caseras-artesanas/ tiene 64 caracteres y además se
+  parece mucho al de la categoría /galletas/ («Galletas caseras artesanas»).
+  - Título nuevo: «Galletas caseras: tipos y cuál elegir | Dulces Marisol» (54)
+
 ## Tareas para Marisol (se hacen a mano en el panel; aquí solo se marca cuando estén)
 
 - [ ] **[T-20261109-1] Arreglar el acceso del sistema a WordPress.** Tu servidor
