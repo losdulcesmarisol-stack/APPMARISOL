@@ -5,11 +5,16 @@ qué se basa. Las entradas de "preferencias de Marisol" mandan sobre los
 criterios generales.
 
 ## Preferencias de Marisol
+- 2026-11-20: Marisol prefiere cambiar ella misma los textos en WordPress en vez de marcar
+  propuestas. Sus descripciones llevan precio («desde 16,90 €»), plazo de envío («24/48 h»)
+  y una llamada a la acción («¡Pide ya!»). Usar ese estilo en las propuestas.
 - (vacío: se irá llenando con lo que apruebe, rechace o comente)
 - 2026-11-10: aún sin respuestas a las propuestas. No acumular demasiadas: si pasan
   días sin respuesta, proponer menos y recordar las pendientes en el resumen.
 
 ## Qué ha funcionado / qué no
+- 2026-11-20: cambios de Marisol en /regalos-navidad/, /rolletes-cuenca/ y sequillos 200 g.
+  Medir en Search Console a partir del 4-18 de diciembre (clics e impresiones).
 - (vacío: se rellena midiendo con Search Console 2-4 semanas después de cada cambio)
 
 ## Datos de la web

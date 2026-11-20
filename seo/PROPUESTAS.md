@@ -13,12 +13,6 @@ debajo una línea que empiece por `> Marisol:`. Después pulsa **"Commit changes
     dulces manchegos artesanos en Cuenca. Descubre nuestros rolletes, mantecados y más.»
   - *(Se aplicará cuando funcione el acceso a la API de WordPress.)*
 
-- [ ] **[P-20261110-1] Página de regalos de Navidad (prioridad: es la temporada).**
-  https://dulcesmarisol.es/regalos-navidad/ · Ahora el título (70 caracteres) y la
-  descripción (166) son tan largos que Google los corta.
-  - Título nuevo: «Regalos de Navidad artesanos de Cuenca | Dulces Marisol»
-  - Descripción nueva: «Regala dulces manchegos artesanos esta Navidad: surtidos, mantecados,
-    rolletes y pastas hechos a mano en Cuenca. Envío 24/48 h, gratis desde 60 €.»
 - [ ] **[P-20261110-2] Página «Conócenos».** https://dulcesmarisol.es/conocenos/
   Ahora la descripción solo dice «Obrador de repostería MariSol» y el título es muy corto.
   - Título nuevo: «Nuestro obrador familiar en Cuenca | Dulces Marisol»
@@ -103,6 +97,10 @@ debajo una línea que empiece por `> Marisol:`. Después pulsa **"Commit changes
   no bloquee a Googlebot.
 
 ## Aplicadas
+
+- **[P-20261110-1] Página de regalos de Navidad** — resuelta por Marisol el 2026-11-20 con
+  sus propios textos: título «Cestas y lotes de Navidad de Cuenca | Dulces Marisol» (52) y
+  descripción de 150 caracteres. Correcto.
 
 ## Rechazadas
 
