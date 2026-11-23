@@ -18,6 +18,8 @@ criterios generales.
 - (vacío: se rellena midiendo con Search Console 2-4 semanas después de cada cambio)
 
 ## Datos de la web
+- 2026-11-23: el cortafuegos se endureció: con 2 páginas a la vez bloqueó 75 de 88. Ahora se
+  revisa una página cada 2,5 s (unos 4 minutos) y se reintentan las bloqueadas tras 1 minuto.
 - 2026-11-17: el hosting tiene un cortafuegos anti-robots (servidor «openresty», pantalla
   «One moment, please...»). Se activa si se piden páginas muy seguidas: auditar despacio
   (2 a la vez) y no confundir esa pantalla con una página sin título.

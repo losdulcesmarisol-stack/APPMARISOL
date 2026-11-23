@@ -169,8 +169,18 @@ def main():
     a = ap.parse_args()
 
     urls = urls_sitemap()
-    with ThreadPoolExecutor(max_workers=2) as ex:  # despacio, para no activar el cortafuegos del hosting
-        paginas = list(ex.map(analizar, urls))
+    # Una página cada ~2,5 s: el cortafuegos del hosting bloquea si se va más rápido.
+    paginas = []
+    for u in urls:
+        paginas.append(analizar(u))
+        time.sleep(2.5)
+    # Las que salgan bloqueadas se reintentan una vez, tras una pausa
+    bloqueadas = [i for i, d in enumerate(paginas) if d.get("bloqueo_antibots")]
+    if bloqueadas:
+        time.sleep(60)
+        for i in bloqueadas:
+            paginas[i] = analizar(paginas[i]["url"])
+            time.sleep(5)
     for d in paginas:
         d["problemas"] = problemas_pagina(d)
 
