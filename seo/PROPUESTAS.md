@@ -57,6 +57,13 @@ debajo una línea que empiece por `> Marisol:`. Después pulsa **"Commit changes
   parece mucho al de la categoría /galletas/ («Galletas caseras artesanas»).
   - Título nuevo: «Galletas caseras: tipos y cuál elegir | Dulces Marisol» (54)
 
+- [ ] **[P-20261126-1] Nuevas cajas de Navidad: acortar una descripción y enlazarlas.**
+  Han aparecido 3 cajas nuevas (Caja Gran Navidad, Caja Navidad, Caja Detalle Navidad).
+  La descripción de Google de «Caja Gran Navidad» tiene 173 letras y se corta: dejarla
+  en unas 150, por ejemplo: «Caja Gran Navidad de Dulces Marisol: surtido artesano de
+  Cuenca para regalar. Envío gratis en península desde 60 €.» Y enlazar las 3 cajas desde
+  la entrada «Amigo invisible: dulces artesanos» y desde la de regalos para empresas.
+
 ## Tareas para Marisol (se hacen a mano en el panel; aquí solo se marca cuando estén)
 
 - [ ] **[T-20261109-1] Arreglar el acceso del sistema a WordPress.** Tu servidor
@@ -95,6 +102,11 @@ debajo una línea que empiece por `> Marisol:`. Después pulsa **"Commit changes
   `https://dulcesmarisol.es/tienda/` y pulsa **«Probar URL publicada»**. Si la captura sale
   con la tienda, todo bien. Si sale «One moment, please...», hay que pedir al hosting que
   no bloquee a Googlebot.
+
+- [ ] **[T-20261126-1] Una entrada del blog está «Sin categoría».** Ha aparecido en Google
+  la página https://dulcesmarisol.es/category/uncategorized/ (vacía de texto). En
+  WordPress → Entradas, busca la que tenga la categoría «Sin categoría» y cámbiala a
+  «Dulces Marisol». Así esa página deja de aparecer.
 
 ## Aplicadas
 

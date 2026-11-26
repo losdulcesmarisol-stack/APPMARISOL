@@ -40,3 +40,6 @@ criterios generales.
 - Temporada: en noviembre y diciembre, priorizar las páginas de Navidad y regalos.
 - 2026-11-09: las imágenes decorativas (bordes .webp) llevan alt="" a
   propósito; no son un error.
+- 2026-11-26: Marisol sigue publicando para Navidad (3 cajas nuevas y 3 entradas) y ha
+  retirado los vinos. Sus entradas nuevas a veces quedan «Sin categoría»: revisar
+  /category/uncategorized/ en cada auditoría.
