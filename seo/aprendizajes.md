@@ -43,3 +43,6 @@ criterios generales.
 - 2026-11-26: Marisol sigue publicando para Navidad (3 cajas nuevas y 3 entradas) y ha
   retirado los vinos. Sus entradas nuevas a veces quedan «Sin categoría»: revisar
   /category/uncategorized/ en cada auditoría.
+- 2026-11-27: de un día a otro desaparecieron 11 metadescripciones y 2 og:image sin que
+  hubiera propuestas aplicadas. Comparar siempre página a página con el día anterior
+  (no solo los totales) para detectar retrocesos así.

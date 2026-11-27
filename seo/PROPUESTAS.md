@@ -108,6 +108,16 @@ debajo una línea que empiece por `> Marisol:`. Después pulsa **"Commit changes
   WordPress → Entradas, busca la que tenga la categoría «Sin categoría» y cámbiala a
   «Dulces Marisol». Así esa página deja de aparecer.
 
+- [ ] **[T-20261127-1] URGENTE: 11 páginas han perdido su descripción para Google.** Entre
+  ayer y hoy han desaparecido las descripciones (el texto que sale debajo del título en
+  Google) de: Conócenos, Dulces online, Rollete casero, Condiciones de compra, Envíos y
+  devoluciones, Aviso legal, Política de privacidad, Política de cookies, Mi cuenta,
+  Carrito y Finalizar compra. Y 2 páginas han perdido la foto al compartir (Mantecados
+  manchegos y Postres artesanos manchegos). La portada está bien. ¿Has cambiado algo en
+  Rank Math o actualizado algún plugin? Mira en WordPress → Rank Math → la página
+  «Conócenos» → pestaña «General» si la descripción sigue escrita. Si no está, dímelo y
+  te paso el texto para cada una. También 3 bizcochos tienen ahora menos texto que ayer.
+
 ## Aplicadas
 
 - **[P-20261110-1] Página de regalos de Navidad** — resuelta por Marisol el 2026-11-20 con
